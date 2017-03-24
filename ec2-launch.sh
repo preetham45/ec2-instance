@@ -1,5 +1,6 @@
 #!/bin/bash
 ami=ami-f4cc1de2
+
 if [ "$ami" == "ami-f4cc1de2" ]
 then
 aws ec2 run-instances --image-id $ami --count 1 --instance-type t2.micro --key-name aws-new --region us-west-2
